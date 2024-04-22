@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('/') }}"><b>{{__('info.admin')}}</b>{{ config('settings.SITE_SHORT_NAME') }}</a>
+            <a href="{{ url('/') }}"><label style="font-size:20px">Cattle Management System</label></a>
         </div>
 
         <div class="login-box-body">
@@ -55,8 +55,24 @@
                 <a href="{{ route('password.request') }}">{{__('info.i_forgot_my_password')}}</a><br>
             @endif
 
+            
+        </div>
+        <div class="col-xs-12 text-center">
+            <label style="font-size:15px;text-align:center">Powered by Ipinfra IOT</label>
         </div>
     </div>
+    <div class="col-xs-12">
+        <div class="row">
+            
+            
+            <div class="col-xs-6">
+                <img src="{{ asset('images/ipinfra.png') }}" >
+            </div>
+            <div class="col-xs-6">
+                <img src="{{ asset('images/rompin.png') }}" >
+            </div>
+        </div>
+        </div>
 @endsection
 
 <!-- iCheck -->

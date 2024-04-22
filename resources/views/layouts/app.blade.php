@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('settings.SITE_NAME', 'Admin - Cattle Master') }}</title>
+    <title>Cattle Management Sytem</title>
 
     <!-- Common Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -16,7 +16,7 @@
 @yield('css')
 
 <!-- Favicon icon -->
-    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
 
     <script>
         let dateFormat = '{{ \App\Helpers\CommonHelper::getJsDisplayDateFormat() }}';
